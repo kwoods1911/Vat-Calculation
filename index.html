@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Free Online VAT Calculator</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	
+
+<div class="container calculator-container">
+
+	<h1 class="header">VAT Calculator</h1>
+		<form id = "vat-form">
+			
+			<h3>
+				<b class="addition">Price</b>
+			</h3>
+				<input type="number" class="input-field" id="net-price" placeholder=" 0.00">
+
+			<h3>
+				<b class="addition">VAT Rate (%)</b>
+			</h3>
+				
+				<input type="number" class="input-field" id="vat-rate">
+			
+			<br>  
+			<label for='exclude-vat'>Exclude VAT:
+				<input class="radio" type="radio" id="exclude-vat" name="vat">
+			</label>
+			<br>
+
+			<label for='include-vat'>
+				Include VAT:
+				<input class="radio" type="radio" id="include-vat" name="vat" checked>
+			</label>
+
+			<br>
+			<button class="submit-button">Calculate VAT</button>
+		</form>
+		<h4>Simple and easy to use! Enter the price, the VAT rate in your respective country and click "Calculate VAT". Never worry about calculating VAT again:)</h4>
+</div>
+
+	
+	<div id="results" class="container">
+		<!-- <button class= "submit-button">reset</button> -->
+		<h6>Note: This application calculates the amount of Value Added Tax added or removed from the net price. We are not responsible for any loss in profit that your may encounter in your business ventures.</h6>	
+	</div>
+
+<script src="jquery-uncompressed.js"></script>
+<script src="vat-calculator.js"></script>
+</body>
+</html>

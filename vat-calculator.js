@@ -54,10 +54,10 @@ vatForm.addEventListener('submit',function(e){
 
 if(excludeVat.checked){
 	removeVat(parsedPrice,parsedRate)
-	$('#results').fadeIn(4300)
+	$('#results').fadeIn(2300)
 }else if(includeVat.checked){
 	addVat(parsedPrice,parsedRate)
-	$('#results').fadeIn(4300)
+	$('#results').fadeIn(2300)
 }else{
 	calculationResults.innerHTML = errorMessage
 }

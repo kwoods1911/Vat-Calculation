@@ -59,6 +59,32 @@ body{
 	border:2px solid #FC574F;	
 }
 
+.information{
+	background-color:#FFFFFF;
+	padding:16px; 
+	margin:12px auto;
+	width: 68%;
+	border-radius: 8px;
+}
+
+.information p{
+	text-align: left;
+}
+
+.information h1{
+	text-decoration: underline;
+	color:#FC574F;
+}
+
+.information ul li{
+	text-align: left;
+	list-style: none;
+	padding:8px;
+	font-size: 18px;
+}
+
+
+
 .addition{
 	font-size: 24px;
 }

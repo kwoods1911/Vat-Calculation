@@ -12,8 +12,16 @@ meta{
 
 .header{
 	background-color: #FC574F;
-	margin:0;
+	margin:4px auto;
+	padding:16px;
+	font-size: 40px;
 	color:#fff;
+	border-left:1.89px solid #FC574F;
+	border-right:1.89px solid #FC574F;
+	border-bottom: 3px solid #7F7F7F;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 90%;
 }
 
 .container{
@@ -26,10 +34,18 @@ meta{
 
 
 .calculator-container{
+	height: auto;
+	min-height: 550px;
 	background-color: #FFFFFF;
 	position: relative;
 	padding:0px;
-	border-radius:4px;
+	padding-top:24px;
+	padding-bottom: 24px;
+	border-radius:8px;
+	border-left:1.89px solid #FC574F;
+	border-right:1.89px solid #FC574F;
+	border-collapse: collapse;
+	border-spacing: 0px;
 }
 
 .calculator-container h4{
@@ -41,17 +57,28 @@ meta{
 	margin:8px 0px;
 }
 
+
+
+#dollar-icon{
+	font-size: 24px;
+}
+
 .input-field,button,input{
 	outline: none;
 }
 .input-field{
-	width: 70%;
+	text-align: center;
+	width: 55%;
 	min-height:40px;
 	background-color: #FFFFFF;
 	border:2px solid #fff;
 	border-bottom: 2px solid #7C7C7C;
 	border-radius: 4px;
 	font-size:18px;
+}
+
+::-webkit-input{
+	text-align: center;
 }
 
 .input-field:hover{
@@ -63,12 +90,33 @@ meta{
 	border:2px solid #FC574F;	
 }
 
+
+/*Centering placeholder*/
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+/*End of centering*/
+
 .information{
 	background-color:#FFFFFF;
 	padding:16px; 
 	margin:12px auto;
 	width: 68%;
 	border-radius: 8px;
+	border-left:1.89px solid #FC574F;
+	border-right:1.89px solid #FC574F;
 }
 
 .information p{
@@ -87,10 +135,22 @@ meta{
 	font-size: 18px;
 }
 
+#select-country{
+	outline: none;
+	width: 50%;
+	min-height: 32px;
+	border-radius: 8px;
+	border:2.5px solid #7C7C7C;
+}
 
+#select-country:focus{
+	transition: .3s;
+	border:2.5px solid #FC574F;
+}
 
 .addition{
-	font-size: 24px;
+	font-size: 32px;
+	padding:16px;
 }
 .submit-button{
 	border:none;
@@ -113,7 +173,8 @@ meta{
 
 #results{
 	display: none;
-	background-color: #FFFFFF;
+	color: #FFFFFF;
+	background-color:#FC574F;
 	padding:12px;
 	margin:8px auto;
 	width:68%;
@@ -127,6 +188,66 @@ meta{
 #results h6{
 	text-align: left;
 }
+
+
+
+
+footer{
+	min-height: 48px;
+	padding:20px 0;
+}
+
+footer{
+	border:3px solid #FC574F;
+}
+
+footer.container{
+	color:#FFFFFF;
+	background: #FC574F;
+	text-align: center;
+}
+
+footer.container ul{
+	margin:0;
+	padding:0;
+}
+
+footer ul li a {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+footer ul{
+	list-style: none;
+	margin:0 auto;
+	text-align:center;
+
+}
+
+
+footer ul li{
+	display: inline;
+	text-align: center;
+	margin:0;
+	padding:0px 16px;
+	font-size: 18px;
+}
+
+
+footer ul li a:hover{
+	transition: .6s;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/*Contact Page*/
+
 
 
 

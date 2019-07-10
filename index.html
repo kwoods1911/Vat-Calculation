@@ -24,19 +24,117 @@
 
 	<h1 class="header">VAT Calculator</h1>
 
-	<h4>VAT Calculator is simple and easy to use! Enter the price, the VAT rate for your respective country and click "Calculate VAT". Never worry about calculating VAT again:)</h4>
+	<h4>VAT Calculator is simple and easy to use! Enter the price, select your country of choice and click "Calculate VAT". Never worry about calculating VAT again:)</h4>
 		<form id = "vat-form">
 			
-			<h3>
-				<b class="addition">Price</b>
+			<h3 class="addition">
+				<b>Price</b>
 			</h3>
-				<input type="number" class="input-field" id="net-price" placeholder=" 0.00">
+				<span id="dollar-icon">$</span><input type="number" class="input-field" id="net-price" placeholder=" 0.00">
+				<span class='mandatory'>*</span>
 
-			<h3>
-				<b class="addition">VAT Rate (%)</b>
+			<h3 class="addition">
+				<b>VAT Rate (%)</b>
 			</h3>
 				
-				<input type="number" class="input-field" id="vat-rate">
+				<!-- <input type="number" class="input-field" id="vat-rate"> -->
+
+				<select id="select-country"> 
+					<option>--- Select Country---</option>
+					<option></option>
+					<option value ='20'>Albania - 20%</option>
+					<option value ='19'>Algeria - 19%</option>
+					<option value ='4.5'>Andorra - 4.5%</option>
+					<option value ='15'>Antigua and Barbuda - 15%</option>
+					<option value ='21'>Argentia - 21%</option>
+					<option value ='20'>Armenia - 20%</option>
+					<option value ='10'>Australia - 20%</option>
+					<option value ='20'>Austria - 20%</option>
+					<option value ='20'>Azerbaijan - 18%</option>
+					<option value ='12'>Bahamas - 12%</option>
+					<option value ='5'>Bahrain - 5%</option>
+					<option value ='15'>Bangladesh - 15%</option>
+					<option value ='17.5'>Barbados - 17.5%</option>
+					<option value ='20'>Belarus - 20%</option>
+					<option value ='21'>Belgium - 12%</option>
+					<option value ='12.5'>Belize - 12.5%</option>
+					<option value ='18'>Benin - 18%</option>
+					<option value ='13'>Bolivia - 13%</option>
+					<option value ='17'>Bosnia and Herzegovina - 17%</option>
+					<option value ='17'>Botswana - 12%</option>
+					<option value ='20'>Bulguria - 20%</option>
+					<option value ='18'>Burkina Faso - 18%</option>
+					<option value ='18'>Burundi - 18%</option>
+					<option value ='10'>Cambodia - 10%</option>
+					<option value ='19.25'>Cameroon - 19.25%</option>
+					<option value ='15'>Cape Verde - 15%</option>
+					<option value ='19'>Central African Republic - 19%</option>
+					<option value ='18'>Chad - 18%</option>
+					<option value ='16'>China - 16%</option>
+					<option value ='19'>Colombia - 19%</option>
+					<option value ='13'>Costa Rica - 13%</option>
+					<option value ='25'>Croatia - 25%</option>
+					<option value ='19'>Cyprus - 19%</option>
+					<option value ='21'>Czech - 21%</option>
+					<option value='16'>Dem. Republic of Congo</option>
+					<option value='15'>Dominica -15%</option>
+					<option value='15'>Dominican Republic -18%</option>
+					<option value ='25'>Denmark - 25%</option>
+					<option value ='12'>Ecuador - 12%</option>
+					<option value ='12'>Egypt - 14%</option>
+					<option value ='13'>El Salvador - 13%</option>
+					<option value ='20'>Estonia - 20%</option>
+					<option value='15'>Equatorial Guinea - 15%</option>
+					<option value='15'>Ethiopia - 15%</option>
+					<option value='25'>Faroe Islands - 25%</option>
+					<option value ='24'>Finland - 24%</option>
+					<option value ='15'>Fiji - 15%</option>
+					<option value ='20'>France - 20%</option>
+					<option value ='18'>Gabon - 18%</option>
+					<option value ='15'>Gambia - 15%</option>
+					<option value ='19'>Germany - 19%</option>
+					<option value ='18'>Georgia - 18%</option>
+					<option value ='18'>Ghana - 15%</option>
+					<option value ='15'>Grenada - 15%</option>
+					<option value ='18'>Guinea - 18%</option>
+					<option value ='15'>Guinea-Bissau - 15%</option>
+					<option value ='16'>Guyana - 16%</option>
+					<option value ='24'>Greece - 24%</option>
+					<option value ='16'>Greece (Aegean islands) - 16%</option>
+					<option value ='10'>Haiti - 10%</option>
+					<option value ='12'>Honduras - 12%</option>
+					<option value ='27'>Hungary - 27%</option>
+					<option value ='24'>Iceland - 24%</option>
+					<option value ='5.5'>India - 5.5%</option>
+					<option value ='10'>Indonesia - 10%</option>
+					<option value ='9'>Iran - 9%</option>
+					<option value ='23'>Ireland - 23%</option>
+					<option value ='22'>Italy - 22%</option>
+					<option value ='0'>Italy(Livigno) - 0%</option>
+					<option value ='20'>Isle of Man - 20%</option>
+					<option value ='17'>Israel - 0%</option>
+					<option value ='18'>Jamaica - 18%</option>
+					<option value ='8'>Japan - 8%</option>
+					<option value ='5'>Jersey - 5%</option>
+					<option value ='16'>Jordan - 16%</option>
+					<option value ='12'>Kazakhstan - 12%</option>
+					<option value ='16'>Kenya - 16%</option>
+					<option value ='21'>Luthuania - 21%</option>
+					<option value ='17'>Luxembourg - 17%</option>
+					<option value ='18'>Malta - 18%</option>
+					<option value ='21'>Netherlands - 21%</option>
+					<option value ='23'>Poland - 23%</option>
+					<option value ='23'>Portugal - 23%</option>
+					<option value ='22'>Portugal(Madeira) - 22%</option>
+					<option value ='18'>Portugal(Azores) - 18%</option>
+					<option value ='19'>Romania - 19%</option>
+					<option value ='20'>Slovakia - 20%</option>
+					<option value ='22'>Slovenia - 22%</option>
+					<option value ='21'>Spain - 21%</option>
+					<option value ='7'>Spain(Canary Islands) - 7%</option>
+					<option value ='25'>Sweden - 25%</option>
+					<option value = '20'>United Kingdom - 20%</option>
+				</select> <span class='mandatory'>*</span>
 			
 			<br>  
 			<label for='exclude-vat'>Exclude VAT:
@@ -52,6 +150,8 @@
 			<br>
 			<button class="submit-button">Calculate VAT</button>
 		</form>
+
+		<span class='mandatory'>* - Field must be completed.</span>
 		
 </div>
 
@@ -68,7 +168,7 @@
 
 		<h1> What is VAT ?</h1>
 
-		<p>VAT stands for Value Added Tax. VAT is added to a product at every point on the supply chain where value is added. This method of taxation used by more than 160 countries around the world. Most of the countries that use VAT are located in the European Union.
+		<p>VAT stands for Value Added Tax. VAT is added to a product at every point on the supply chain where value is added. This method of taxation is used by more than 160 countries around the world. Most of the countries that use VAT are located in the European Union.
 		</p>
 
 
@@ -109,7 +209,16 @@
 		</ul>
 		<!-- <span> Contact me by visiting my <a href="http://www.khariwoods.com/">website</a> .</span> -->
 	</div>
+<footer class="container">
+	<ul>
+		<li>
+			<!-- <a href="#">About</a></li> -->
+		<!-- <li><a href="#">Contact</a></li> -->
+		<!-- <li><a href="#">Help</a></li> -->
+	</ul>
 
+	<p> &copy;2019| VAT CALCULATOR. All Rights Reserved</p>
+</footer>
 <script src="jquery-uncompressed.js"></script>
 <script src="vat-calculator.js"></script>
 </body>

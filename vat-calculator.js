@@ -1,6 +1,8 @@
 const netPrice = document.querySelector('#net-price')
-let vatRate = document.querySelector('#vat-rate')
-vatRate.value = '12'
+const selectedCountry = document.querySelector('#select-country')
+// let vatRate = document.querySelector('#vat-rate')
+let vatRate = selectedCountry.options[selectedCountry.selectedIndex].value
+// vatRate.value = '12'
 const vatForm = document.querySelector('#vat-form')
 const excludeVat = document.querySelector('#exclude-vat')
 const includeVat = document.querySelector('#include-vat')
@@ -8,7 +10,7 @@ let calculationResults = document.querySelector('#results')
 
 const errorMessage = '<h2> Error! You Must choose to include or Exclude VAT</h2>'
 
-const disclaimer = '<h6>Note: This application calculates the amount of Value Added Tax added or removed from the net price. We are not responsible for any loss that you may encounter using</h6>'
+const disclaimer = '<h6>Note: This application calculates the amount of Value Added Tax added or removed from the net price. We are not responsible for any loss that you may encounter using this application.</h6>'
 
 console.log(includeVat)
 let vatPrice
@@ -37,7 +39,7 @@ const addVat = function(netPrice,vatRate){
 
 
 const validateForm = function(formValue1,formValue2){
-	if(formValue1 === '' || formValue2 ===''){
+	if(formValue1 === '' || formValue2.value === ''){
 		alert('Please complete both forms! ')
 	}
 }
@@ -48,10 +50,17 @@ const validateForm = function(formValue1,formValue2){
 
 vatForm.addEventListener('submit',function(e){
 	e.preventDefault(e)
-	validateForm(netPrice.value,vatRate.value)
-	let parsedPrice = JSON.parse(netPrice.value)
-	let parsedRate = JSON.parse(vatRate.value)
+	// Declare the VAT Rate based on the country selected
+	let vatRate = selectedCountry.options[selectedCountry.selectedIndex].value
+	// Ensure both forms are completed.
+	validateForm(netPrice.value,vatRate)
 
+
+	// Convert strings to integers and store them in variables
+	let parsedPrice = JSON.parse(netPrice.value)
+	let parsedRate = JSON.parse(vatRate)
+
+// Determine if Exclude or Include Vat options are selected.
 if(excludeVat.checked){
 	removeVat(parsedPrice,parsedRate)
 	$('#results').fadeIn(2300)

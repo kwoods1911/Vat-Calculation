@@ -19,7 +19,7 @@ let vatAmount
 
 // Display Resuts in a div
 const displayResults = function(vatPrice,vatRate,operation){
-	return '<h3>Total Cost: $' + vatPrice.toFixed(2) +  '</h3>'+'<h4> VAT Amount: $ ' + vatAmount.toFixed(2) + '</h4>' + '<h4> VAT Rate: '+ vatRate + ' % </h4>' + '<h4> Operation: ' + operation+'</h4>' + disclaimer
+	return '<h3>Total Cost: ' + vatPrice.toFixed(2) +  '</h3>'+'<h4> VAT Amount:  ' + vatAmount.toFixed(2) + '</h4>' + '<h4> VAT Rate: '+ vatRate + ' % </h4>' + '<h4> Operation: ' + operation+'</h4>' + disclaimer
 }
 // Remove Vat From an Net Price
 const removeVat = function(netPrice,vatRate){

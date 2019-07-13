@@ -40,7 +40,7 @@ const addVat = function(netPrice,vatRate){
 
 const validateForm = function(formValue1,formValue2){
 	if(formValue1 === '' || formValue2.value === ''){
-		alert('Please complete both forms! ')
+		alert('Please enter a price and select a country ! ')
 	}
 }
 

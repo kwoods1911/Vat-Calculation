@@ -29,7 +29,7 @@ meta{
 
 .container{
 	height:auto;
-	width: 70%;
+	width: 75%;
 	margin:0 auto;
 	text-align: center;
 
@@ -241,7 +241,20 @@ footer ul li a:hover{
 
 
 
+@media(min-width: 320px){
+	.container{
+	width: 80%;
 
+}
+}
+
+
+
+@media(min-width: 1024px){
+	.container{
+		width: 60%;
+	}
+}
 
 
 

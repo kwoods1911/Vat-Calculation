@@ -13,13 +13,22 @@
 	<title> Free Online VAT Calculator</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Online VAT calculator is a free and easy to use tool for calculating the VAT of an item. Simply enter the price, enter the VAT percentage in your country and then click 'Calculate VAT'. No complicated Math required.">
+	<meta name="description" content="Online VAT calculator! Most accurate and comprehensive vat calculator there is.">
 
-	<meta name="keywords" content="vat calculator, online vat calculator, vat cal, how is vat calculated, net price, calculate vat">
+	<meta name="keywords" content="value added tax, vat rate, online vat calculator,vat calculator, value added tax calculator, how is vat calculated, calculate vat">
+
+
+<!-- Facebook sharing link -->
+<meta property="og:url"           content="https://vatcalculator.org" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Online VAT Calculator" />
+  <meta property="og:description"   content="This is a test!" />
+  <!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
 </head>
 <body>
 
-	
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
 
 <div class="container calculator-container">
 
@@ -153,7 +162,9 @@
 			<button class="submit-button">Calculate VAT</button>
 		</form>
 
-		<span class='mandatory'>* - Field must be completed.</span>
+		<span class='mandatory'>* - Field must be completed.</span> 
+		<br>	
+<div class="fb-share-button" data-href="https://www.vatcalculator.org/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 		
 </div>
 
@@ -162,8 +173,7 @@
 
 	
 	<div id="results" class="container">
-		<!-- <button class= "submit-button">reset</button> -->
-		<h6>Note: This application calculates the amount of Value Added Tax added or removed from the net price. We are not responsible for any loss in profit that you may encounter in your business ventures.</h6>	
+		<!-- <button class= "submit-button">reset</button> -->	
 	</div>
 
 	<div class="information container">
@@ -220,8 +230,12 @@
 	</ul>
 
 	<p> &copy;2019| VAT CALCULATOR. All Rights Reserved</p>
+	
+
 </footer>
 <script src="jquery-uncompressed.js"></script>
 <script src="vat-calculator.js"></script>
+
+
 </body>
 </html>

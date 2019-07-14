@@ -58,6 +58,8 @@ vatForm.addEventListener('submit',function(e){
 	let parsedPrice = JSON.parse(netPrice.value)
 	let parsedRate = JSON.parse(vatRate)
 
+
+  
 // Determine if Exclude or Include Vat options are selected.
 if(excludeVat.checked){
 	removeVat(parsedPrice,parsedRate)
@@ -68,6 +70,11 @@ if(excludeVat.checked){
 }else{
 	calculationResults.innerHTML = errorMessage
 }
+
+		// Fire Scroll animation
+  $('html, body').animate({
+        scrollTop: 500
+    }, 2000);
 
 })
 

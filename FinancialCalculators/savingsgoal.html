@@ -1,0 +1,115 @@
+<!-- 
+Author:Khari Woods
+Project: Vat-Calculator (Financial Calculator tools)
+Date: December 16, 2019
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Savings Goal Calculator</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+		
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../index.html">Vat-Calculator</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle active" data-toggle="dropdown" href="#">Financial Calculators
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../Coin-Counter/index.html">Coin Counter</a></li>
+          <li class="active"><a href="savingsgoal.html">Savings Goal Calculator</a></li>
+          <!-- <li><a href="#">Income Calculator</a></li> -->
+        </ul>
+      </li>
+      <li><a href="../about.html">About Me</a></li>
+      <!-- <li><a href="#contact.html">Contact Page</a></li> -->
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="container calculator-container">
+	<h1 class="header">Savings Goal Calculator</h1>
+
+	<div>
+		<p>Use this tool to help you obtain your savings goal. Find out exactly how much money you need to contribute towards your monthly deposit in order to meet your savings goal. It is very simple to use. Enter your savings goal, the initial deposit towards your savings, then the length of time you want to save and lastly the interest rate.</p>
+	</div>
+
+<form id="savingsForm" class="form-horizontal">
+
+	<div class="input-container">
+		<h3>Step 1</h3>
+		<p>Enter the savings goal that you wish to achieve..</p>
+		<label>Savings Goal: </label>
+			<input type="number" name="" placeholder="0.00" id="savingsGoal">
+			
+	</div>
+	
+
+	<div class="input-container">
+		<h3>Step 2</h3>
+		<p>Enter the amount of money that you already have saved</p>
+		<label>Current Savings</label>	
+				<input type="number" name="" placeholder="0.00" id="currentSavings">
+	</div>
+
+	<div class="input-container">
+		<h3>Step 3</h3>
+		<p>Enter the amount of months that you plan to save.</p>
+		<label>Length Of Time</label>
+			<input type="number" name="" placeholder="e.g 12 months" id="anticipatedTimeline">
+	</div>
+					
+
+	<div class="input-container">
+		<h3>Step 4</h3>
+		<p>Enter the interest rate.</p>
+		<label>Interest Rate</label>
+		<input type="number" name="" placeholder="e.g 2%" id="interestRate">
+	</div>				
+					
+								
+	<input type="submit" class="btn-lg" value="Calculate">
+</form>	
+
+</div>
+
+
+
+<div id="results" class="container">
+		<!-- 
+		Monthly Deposit:
+		 -->
+	</div>
+
+<footer class="container">
+  <ul>
+    <li>
+      <!-- <a href="#">About</a></li> -->
+    <!-- <li><a href="#">Contact</a></li> -->
+    <!-- <li><a href="#">Help</a></li> -->
+  </ul>
+
+  <p> &copy;2019| VAT CALCULATOR. All Rights Reserved</p>
+  
+
+</footer>
+
+<script src="../jquery-uncompressed.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="jsCalcFiles/savingsGoal.js"></script>
+</body>
+
+</html>

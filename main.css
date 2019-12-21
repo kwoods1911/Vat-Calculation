@@ -1,3 +1,5 @@
+
+
 body{
 	background-color: #7F7F7F;
 	margin:8px;
@@ -190,8 +192,9 @@ meta{
 	color: #FFFFFF;
 	background-color:#FC574F;
 	padding:12px;
-	margin:8px auto;
-	width:68%;
+	margin:18px auto;
+	/*width:68%;*/
+	/*width: 75%;*/
 	border-radius:6px;
 }
 
@@ -261,8 +264,52 @@ footer ul li a:hover{
 }
 
 
+/*About Page Styling*/
 
 
+
+
+
+/*Savings Goal Calculator*/
+
+
+.input-container{
+	background-color: #7F7F7F;
+	/*color:#eee;*/
+	margin:8px auto;
+	padding:16px;
+	width: 80%;
+}
+
+.input-container h3{
+	float: left;
+	color:#eee;
+}
+
+.input-container p{
+	color:#eee;
+}
+
+table{
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+th{
+	padding:8px;
+	border: 2px solid black;
+}
+td{
+	padding:8px;
+	border:1px solid black;
+}
+
+
+.btn-lg{
+	border:none;
+	background-color: #FC574F;
+	color: #FFFFFF;
+}
 
 
 

@@ -1,4 +1,4 @@
-const netPrice = document.querySelector('#net-price')
+ const netPrice = document.querySelector('#net-price')
 const selectedCountry = document.querySelector('#select-country')
 // let vatRate = document.querySelector('#vat-rate')
 let vatRate = selectedCountry.options[selectedCountry.selectedIndex].value

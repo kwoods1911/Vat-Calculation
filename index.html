@@ -1,3 +1,10 @@
+<!-- 
+Author: Khari Woods
+Project: Online VAT Calcultor
+Date: December 16, 2019
+ -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,15 +22,16 @@
 
 
 	<title>Online VAT Calculator</title>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="canonical"
-  href="/web/tweet-button">
+	<link rel="canonical" href="/web/tweet-button">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Online VAT calculator! Most accurate and comprehensive vat calculator there is.">
 
-	<meta name="keywords" content="value added tax, vat rate, online vat calculator,vat calculator, value added tax calculator, how is vat calculated, calculate vat, vat excluded, vat included">
+	<meta name="keywords" content="vat calculator,value added tax, vat calculator online, online vat calculator,vat calculator, value added tax calculator, how is vat calculated, calculate vat, vat excluded, vat included , plus vat calculator, vat calculator bahamas, vat calculator Ireland, vat calculator malta">
 
 
 <!-- Facebook sharing link -->
@@ -37,11 +45,40 @@
 <!-- Twitter for websites -->
   <script src="twitter.js"></script>
 </head>
+
+
+
+
+
+
+
 <body>
 
 	<!-- Facebook Social Media Link -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Vat-Calculator</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Financial Calculators
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Coin-Counter/index.html">Coin Counter</a></li>
+          <li><a href="FinancialCalculators/savingsgoal.html">Savings Goal Calculator</a></li>
+          <!-- <li><a href="#">Income Calculator</a></li> -->
+        </ul>
+      </li>
+      <li><a href="about.html">About Me</a></li>
+      <!-- <li><a href="#contact.html">Contact Page</a></li> -->
+    </ul>
+  </div>
+</nav>
 
 <div class="container calculator-container">
 
@@ -258,10 +295,11 @@ Tweet</a>
 	
 
 </footer>
+
+
 <script src="jquery-uncompressed.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
 <script src="vat-calculator.js"></script>
-
-
 
 
 </body>

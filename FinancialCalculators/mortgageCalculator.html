@@ -1,0 +1,89 @@
+<!-- 
+Project: Mortgage Calculator
+Date: January, 2020
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mortgage Calculator</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<meta name="keywords" content="">	
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../index.html">Vat-Calculator</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle active" data-toggle="dropdown" href="#">Financial Calculators
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../Coin-Counter/coin-counter.html">Coin Counter</a></li>
+          <li class="active"><a href="savingsgoal.html">Savings Goal Calculator</a></li>
+          <!-- <li><a href="#">Income Calculator</a></li> -->
+        </ul>
+      </li>
+      <li><a href="../about.html">About Me</a></li>
+      <!-- <li><a href="#contact.html">Contact Page</a></li> -->
+    </ul>
+  </div>
+</nav>
+
+<div class="container calculator-container">
+	<h1 class="header">Mortgage Calculator</h1>
+
+	<div>
+		<p>Use this tool to </p>
+	</div>
+
+<form id="savingsForm" class="form-horizontal">]
+	
+
+	<div class="input-container">
+		<h3>Mortgage Amount</h3>
+		<p>Enter your total Mortgage</p>
+		<label>Mortgage Amount</label>	
+				<input type="number" name="" placeholder="0.00" id="currentSavings">
+	</div>
+
+	<div class="input-container">
+		<h3>Annual Interest Rate:</h3>
+		<p>Enter the interest rate that your expect to achieve</p>
+		<label>Length Of Time</label>
+			<input type="number" name="" placeholder="e.g 12 months" id="anticipatedTimeline">
+	</div>
+					
+
+	<div class="input-container">
+		<h3>Mortgage Term:</h3>
+		<p>Enter the length of period you expect to spend paying off this loan.</p>
+		<label>Interest Rate</label>
+		<input type="number" name="" placeholder="e.g 2%" id="interestRate">
+	</div>				
+					
+								
+	<input type="submit" class="btn-lg" value="Calculate">
+</form>	
+
+</div>
+
+
+
+<div id="results" class="container">
+		<!-- 
+		Monthly Deposit:
+		 -->
+	</div>
+
+
+<script src="mortgageCalculator.js"></script>
+</body>
+</html>
